@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achitare"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nume"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrenume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prenume"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numărul cardului"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextDataExpirare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data Expirării (MM/YY)"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVV"
+        android:inputType="numberPassword"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/buttonPlateste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Achită"
+        android:onClick="onPayClick"
+        android:enabled="false"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/buttonUrmatorul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizează comanda"
+        android:onClick="onNextClick"
+        android:enabled="false"/>
+</LinearLayout>
